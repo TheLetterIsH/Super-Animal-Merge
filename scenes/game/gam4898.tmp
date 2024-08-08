@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1bdjai3vae65"]
+
+[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_cp8hg"]
+[ext_resource type="PackedScene" uid="uid://5l4lxaur65er" path="res://scenes/game objects/box/box.tscn" id="2_sqocw"]
+[ext_resource type="PackedScene" uid="uid://ep444ak7ih7p" path="res://scenes/game objects/animals/animal.tscn" id="3_avy2d"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_cp8hg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Box" parent="." instance=ExtResource("2_sqocw")]
+position = Vector2(0, 160)
+
+[node name="AnimalContainer" type="Node2D" parent="." groups=["animal_container"]]
+
+[node name="Animal" parent="AnimalContainer" instance=ExtResource("3_avy2d")]
+position = Vector2(-168, 120)
+
+[node name="Animal2" parent="AnimalContainer" instance=ExtResource("3_avy2d")]
+position = Vector2(200, -304)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(-456, -384)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-540, -512, 540, -512)
+width = 8.0
+default_color = Color(0.713726, 0.913725, 0.996078, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2

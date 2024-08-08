@@ -1,0 +1,15 @@
+extends Node
+
+enum ANIMAL_TYPE {
+	LADYBUG,
+	FROG,
+	DUCK,
+	CAT,
+	DOG,
+	TURTLE,
+	PIG,
+	TIGER,
+	PANDA,
+	ELEPHANT,
+	WHALE,
+}

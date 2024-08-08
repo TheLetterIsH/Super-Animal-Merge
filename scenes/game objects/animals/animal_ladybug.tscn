@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://drb47n00ae6w7"]
+
+[ext_resource type="PackedScene" uid="uid://ep444ak7ih7p" path="res://scenes/game objects/animals/animal.tscn" id="1_8vd42"]
+[ext_resource type="Texture2D" uid="uid://bq0ngyiijgkbx" path="res://scenes/game objects/animals/animal.png" id="2_8p03f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rxgdn"]
+radius = 38.4
+
+[node name="AnimalLadybug" instance=ExtResource("1_8vd42")]
+modulate = Color(0.972549, 0.341176, 0.282353, 1)
+scale_mult = 0.15
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_8p03f")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_rxgdn")

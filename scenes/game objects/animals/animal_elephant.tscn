@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmjvuanbfmxk3"]
+
+[ext_resource type="PackedScene" uid="uid://ep444ak7ih7p" path="res://scenes/game objects/animals/animal.tscn" id="1_fqqdm"]
+[ext_resource type="Texture2D" uid="uid://bq0ngyiijgkbx" path="res://scenes/game objects/animals/animal.png" id="2_jvvc6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_psw0n"]
+radius = 227.84
+
+[node name="AnimalElephant" instance=ExtResource("1_fqqdm")]
+modulate = Color(1, 0.345098, 0.670588, 1)
+animal_type = 9
+scale_mult = 0.89
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.89, 0.89)
+texture = ExtResource("2_jvvc6")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_psw0n")

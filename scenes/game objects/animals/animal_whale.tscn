@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://xpc32o03u0gr"]
+
+[ext_resource type="PackedScene" uid="uid://ep444ak7ih7p" path="res://scenes/game objects/animals/animal.tscn" id="1_owa7v"]
+[ext_resource type="Texture2D" uid="uid://bq0ngyiijgkbx" path="res://scenes/game objects/animals/animal.png" id="2_hyaau"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qs0jv"]
+radius = 256.0
+
+[node name="AnimalWhale" instance=ExtResource("1_owa7v")]
+modulate = Color(0.917647, 0.113725, 0.454902, 1)
+animal_type = 10
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_hyaau")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_qs0jv")

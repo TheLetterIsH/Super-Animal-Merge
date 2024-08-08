@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c266j2yw62ua2"]
+
+[ext_resource type="Script" path="res://scenes/autoloads/object_manager.gd" id="1_yoto7"]
+
+[node name="ObjectManager" type="Node"]
+script = ExtResource("1_yoto7")

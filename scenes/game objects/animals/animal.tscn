@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ep444ak7ih7p"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://bltgqgfy1l6o7" path="res://resources/physics/animal_physics_material.tres" id="1_821qm"]
+[ext_resource type="Script" path="res://scenes/game objects/animals/animal.gd" id="2_uwyps"]
+
+[node name="Animal" type="RigidBody2D" groups=["animal"]]
+collision_layer = 2
+collision_mask = 3
+physics_material_override = ExtResource("1_821qm")
+freeze = true
+max_contacts_reported = 20
+contact_monitor = true
+script = ExtResource("2_uwyps")
+scale_mult = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+disabled = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

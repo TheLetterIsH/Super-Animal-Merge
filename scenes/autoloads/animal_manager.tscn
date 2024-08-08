@@ -1,0 +1,19 @@
+[gd_scene load_steps=13 format=3 uid="uid://b6fb2qcpd8uh7"]
+
+[ext_resource type="Script" path="res://scenes/autoloads/animal_manager.gd" id="1_5kngj"]
+[ext_resource type="PackedScene" uid="uid://drb47n00ae6w7" path="res://scenes/game objects/animals/animal_ladybug.tscn" id="2_yhai0"]
+[ext_resource type="PackedScene" uid="uid://518pkndk47dg" path="res://scenes/game objects/animals/animal_frog.tscn" id="3_ff0if"]
+[ext_resource type="PackedScene" uid="uid://dmgksucdw4213" path="res://scenes/game objects/animals/animal_duck.tscn" id="4_i4k83"]
+[ext_resource type="PackedScene" uid="uid://b1t0dccswlw3q" path="res://scenes/game objects/animals/animal_cat.tscn" id="5_csus1"]
+[ext_resource type="PackedScene" uid="uid://dyiisf4okkdkc" path="res://scenes/game objects/animals/animal_dog.tscn" id="6_w3feb"]
+[ext_resource type="PackedScene" uid="uid://dmjvuanbfmxk3" path="res://scenes/game objects/animals/animal_elephant.tscn" id="7_x1rm7"]
+[ext_resource type="PackedScene" uid="uid://bsb6673o2h5v6" path="res://scenes/game objects/animals/animal_panda.tscn" id="8_uehw5"]
+[ext_resource type="PackedScene" uid="uid://dd3i8hilqquan" path="res://scenes/game objects/animals/animal_pig.tscn" id="9_nfpry"]
+[ext_resource type="PackedScene" uid="uid://wo47ixy1ivhi" path="res://scenes/game objects/animals/animal_tiger.tscn" id="10_mrlom"]
+[ext_resource type="PackedScene" uid="uid://dj7a24013l43l" path="res://scenes/game objects/animals/animal_turtle.tscn" id="11_vd4g7"]
+[ext_resource type="PackedScene" uid="uid://xpc32o03u0gr" path="res://scenes/game objects/animals/animal_whale.tscn" id="12_fd74b"]
+
+[node name="AnimalManager" type="Node"]
+script = ExtResource("1_5kngj")
+spawnable_animal_scenes = Array[PackedScene]([ExtResource("2_yhai0"), ExtResource("3_ff0if"), ExtResource("4_i4k83"), ExtResource("5_csus1"), ExtResource("6_w3feb")])
+animal_scenes = Array[PackedScene]([ExtResource("2_yhai0"), ExtResource("3_ff0if"), ExtResource("4_i4k83"), ExtResource("5_csus1"), ExtResource("6_w3feb"), ExtResource("11_vd4g7"), ExtResource("9_nfpry"), ExtResource("10_mrlom"), ExtResource("8_uehw5"), ExtResource("7_x1rm7"), ExtResource("12_fd74b")])

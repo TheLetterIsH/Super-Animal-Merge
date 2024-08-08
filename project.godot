@@ -11,9 +11,36 @@ config_version=5
 [application]
 
 config/name="Super Animal Merge"
+run/main_scene="res://scenes/game/game.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ObjectManager="*res://scenes/autoloads/object_manager.tscn"
+AnimalManager="*res://scenes/autoloads/animal_manager.tscn"
+Enums="*res://scenes/autoloads/enums.gd"
+GameEvents="*res://scenes/autoloads/game_events.tscn"
+MergeManager="*res://scenes/autoloads/merge_manager.tscn"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/mode=3
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+mouse_cursor/custom_image="res://graphics/cursor/hand_point.png"
+
+[layer_names]
+
+2d_physics/layer_1="environment"
+2d_physics/layer_2="animal"
 
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
